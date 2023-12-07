@@ -1,0 +1,21 @@
+@import '../../scss/variables';
+
+.no-data {
+  text-align: center;
+  opacity: 0.8;
+
+  transition: opacity 0.3s ease-in;
+
+  &__img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+  }
+  &__text {
+    font-weight: 500;
+    cursor: default;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}

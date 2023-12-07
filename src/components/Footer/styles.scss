@@ -1,0 +1,21 @@
+@import '../../scss/variables';
+
+.footer {
+  display: flex;
+
+  gap: 10px;
+  justify-content: center;
+  padding: 20px 0;
+
+  img {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

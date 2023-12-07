@@ -1,0 +1,42 @@
+@import '../../scss/variables';
+
+.edit_finances {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding-bottom: 5px;
+
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, $blue, $blue-dark) 1 0%;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 390px;
+  }
+  &__value {
+    display: flex;
+    gap: 10px;
+  }
+  &__note {
+    font-size: 13px;
+  }
+  &__select {
+    padding-right: 20px;
+  }
+
+  option {
+    background-color: $violet-dark;
+  }
+  input {
+    padding: 3px;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  input:focus {
+    border-color: white;
+  }
+}

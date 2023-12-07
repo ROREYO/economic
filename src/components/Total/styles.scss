@@ -1,0 +1,20 @@
+.total {
+  display: flex;
+
+  &__wrapper {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+  }
+  &__summ {
+    display: flex;
+    gap: 2px;
+  }
+}
+
+.plus {
+  color: forestgreen;
+}
+.minus {
+  color: crimson;
+}

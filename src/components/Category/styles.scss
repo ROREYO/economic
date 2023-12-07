@@ -1,0 +1,14 @@
+@import '../../scss/variables';
+
+.categories {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__text {
+    max-width: 284px;
+    padding-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
