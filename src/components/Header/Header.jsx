@@ -23,7 +23,7 @@ export const Header = () => {
       <div className="header__currencies">
         {status === 'succeeded' ? (
           <>
-            <div className="header__currencies--text">Exchange rate to euro:</div>
+            <div className="header__currencies--text">Exchange rate to ruble:</div>
 
             <div className="header__currencies--value">{getCurrency('USD', '$')}</div>
             <div className="header__currencies--value">{getCurrency('GBP', '£')}</div>
