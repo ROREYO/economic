@@ -1,14 +1,9 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const key = '709a828f3a30f0b8deec6faeddb745aa';
-const symbols = 'USD,GBP,JPY,RUB';
-
 export const fetchCurrencies = createAsyncThunk('currencies/fetchCurrencies', async () => {
-  const response = await axios.get(
-    `http://data.fixer.io/api/latest?access_key=${key}&symbols=${symbols}`,
-  );
-  return response.data.rates;
+  const response = await axios.get(`https://www.cbr-xml-daily.ru/daily_json.js`);
+  return response.data.Valute;
 });
 
 const currencySlice = createSlice({

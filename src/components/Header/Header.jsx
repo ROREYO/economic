@@ -14,7 +14,7 @@ export const Header = () => {
   }, [dispatch]);
 
   const getCurrency = (valueCurrency, symbol) => {
-    const currency = currencies && currencies[valueCurrency]?.toFixed(2);
+    const currency = currencies && currencies[valueCurrency]?.Value.toFixed(2);
     return currency ? currency + ' ' + symbol : 'error';
   };
 
@@ -28,7 +28,7 @@ export const Header = () => {
             <div className="header__currencies--value">{getCurrency('USD', '$')}</div>
             <div className="header__currencies--value">{getCurrency('GBP', '£')}</div>
             <div className="header__currencies--value">{getCurrency('JPY', '¥')}</div>
-            <div className="header__currencies--value">{getCurrency('RUB', '₽')}</div>
+            <div className="header__currencies--value">{getCurrency('EUR', '€')}</div>
           </>
         ) : (
           <div className="header__currencies--value">Loading currencies...</div>

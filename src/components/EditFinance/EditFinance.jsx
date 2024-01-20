@@ -48,7 +48,7 @@ export const EditFinance = ({ finance, categories, onClickConfirmFinance }) => {
             {...register('sum', {
               required: true,
               pattern: {
-                value: /^[0-9]+$/,
+                value: /^[0-9.]+$/,
               },
             })}
             type="number"

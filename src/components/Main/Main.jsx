@@ -21,7 +21,7 @@ export const Main = () => {
 
   const onSubmitAddCategory = (titleCategory) => {
     let doesCategoryExist = categories.some(
-      (categories) => categories.titleCategory === titleCategory,
+      (categorie) => categorie.titleCategory === titleCategory,
     );
 
     if (doesCategoryExist) {
@@ -34,6 +34,13 @@ export const Main = () => {
   const onSubmitAddFinance = (titleFinance) => {
     if (categories.length === 0) {
       alert('Add a category first!');
+      return;
+    }
+
+    let doesFinanceExist = finances.some((finance) => finance.isEditing === true);
+
+    if (doesFinanceExist) {
+      alert('First complete editing financial');
       return;
     }
 
